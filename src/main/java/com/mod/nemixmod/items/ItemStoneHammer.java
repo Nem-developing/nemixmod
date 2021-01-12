@@ -1,47 +1,26 @@
 package com.mod.nemixmod.items;
 
-import net.minecraft.item.Item;
+import com.mod.nemixmod.init.BlockMod;
+
+import net.minecraft.block.Block;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ChatComponentText;
-import net.minecraft.util.EnumChatFormatting;
-import net.minecraft.util.MathHelper;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.world.BlockEvent.BreakEvent;
-import scala.collection.parallel.ParIterableLike.Min;
-import scala.swing.TextComponent;
 
-import java.io.FileWriter;
-import java.io.PrintWriter;
-import java.sql.Time;
+public class ItemStoneHammer extends ItemPickaxe {
 
-import org.apache.commons.logging.Log;
-
-import com.mod.nemixmod.init.BlockMod;
-import com.mod.nemixmod.init.ItemMod;
-
-import net.minecraft.block.Block;
-import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
-import net.minecraft.item.Item.ToolMaterial;
-
-public class ItemNemixHammer extends ItemPickaxe {
-
-	public ItemNemixHammer(ToolMaterial p_i45347_1_) {
+	public ItemStoneHammer(ToolMaterial p_i45347_1_) {
 		super(p_i45347_1_);
-		setMaxDamage(7777);
- 
+		setMaxDamage(260);
 	}
-
-		
-	
-	
 	
 	public boolean onBlockDestroyed(ItemStack stack, World world, Block block, int x, int y, int z, EntityLivingBase entity) {
 		if (entity instanceof EntityPlayer) {
@@ -51,7 +30,7 @@ public class ItemNemixHammer extends ItemPickaxe {
 
 		Vec3 lookVec = player.getLookVec();
 		double xLook = Math.abs(lookVec.xCoord);
-		double yLook = Math.abs(lookVec.yCoord); 
+		double yLook = Math.abs(lookVec.yCoord);
 		double zLook = Math.abs(lookVec.zCoord);
 
 		double max = Math.max(xLook, Math.max(yLook, zLook));
@@ -136,7 +115,5 @@ public class ItemNemixHammer extends ItemPickaxe {
 		}
 		return false;
 		}
-	
-	
-	
+
 }

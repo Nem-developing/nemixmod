@@ -1,3 +1,4 @@
+itemGroup.nemixtab=§a§kNE §2§lnemix Tab §a§kXO
 item.nemix_ingot.name=nemix Ingot
 item.nemix_reinforced_ingot.name=nemix reinforced ingot
 item.nemix_sword.name=nemix sword
@@ -30,5 +31,10 @@ item.miner_helmet.name=miner helmet
 item.miner_chestplate.name=miner chestplate
 item.miner_leggings.name=miner leggings
 item.miner_boots.name=miner boots
+item.nemix_reinforced_hammer.name=nemix reinforced hammer
 item.nemix_hammer.name=nemix hammer
-itemGroup.nemixtab=§a§kNE §2§lnemix Tab §a§kXO
+item.diamond_hammer.name=diamond hammer
+item.golden_hammer.name=golden hammer
+item.iron_hammer.name=iron hammer
+item.stone_hammer.name=stone hammer
+item.wooden_hammer.name=wooden hammer

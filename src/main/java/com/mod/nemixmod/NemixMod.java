@@ -2,6 +2,7 @@ package com.mod.nemixmod;
 
 import com.mod.nemixmod.init.BlockMod;
 import com.mod.nemixmod.init.ItemMod;
+import com.mod.nemixmod.init.RemoveMod;
 import com.mod.nemixmod.proxy.CommonProxy;
 import com.mod.nemixmod.world.WorldRegister;
 
@@ -35,10 +36,11 @@ public class NemixMod
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
-		ItemMod.init();
+		ItemMod.init(); 
 		ItemMod.register();
 		BlockMod.init();
 		BlockMod.register();
+		RemoveMod.init();
 		WorldRegister.mainRegistry();
 	}
 	

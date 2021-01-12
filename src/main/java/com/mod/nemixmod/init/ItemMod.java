@@ -10,12 +10,18 @@ import com.mod.nemixmod.items.ItemNemixHoe;
 import com.mod.nemixmod.items.ItemNemixPickaxe;
 import com.mod.nemixmod.items.ItemNemixReinforcedArmor;
 import com.mod.nemixmod.items.ItemNemixReinforcedAxe;
+import com.mod.nemixmod.items.ItemNemixReinforcedHammer;
 import com.mod.nemixmod.items.ItemNemixReinforcedHoe;
 import com.mod.nemixmod.items.ItemNemixReinforcedPickaxe;
 import com.mod.nemixmod.items.ItemNemixReinforcedShovel;
 import com.mod.nemixmod.items.ItemNemixReinforcedSword;
 import com.mod.nemixmod.items.ItemNemixShovel;
 import com.mod.nemixmod.items.ItemNemixSword;
+import com.mod.nemixmod.items.ItemStoneHammer;
+import com.mod.nemixmod.items.ItemWoodenhammer;
+import com.mod.nemixmod.items.ItemDiamondHammer;
+import com.mod.nemixmod.items.ItemGoldenHammer;
+import com.mod.nemixmod.items.ItemIronHammer;
 import com.mod.nemixmod.items.ItemMinerArmor;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -46,7 +52,7 @@ public class ItemMod
 	
 	
 	
-	public static Item nemix_ingot, nemix_reinforced_ingot, nemix_sword, nemix_shovel, nemix_pickaxe, nemix_axe, nemix_hoe, nemix_helmet, nemix_chestplate, nemix_leggings, nemix_boots, nemix_apple, nemix_stick, nemix_core, nemix_reinforced_core, nemix_reinforced_sword, nemix_reinforced_pickaxe, nemix_reinforced_helmet ,nemix_reinforced_chestplate, nemix_reinforced_leggings, nemix_reinforced_boots,nemix_reinforced_axe, nemix_reinforced_hoe, nemix_reinforced_shovel ,miner_helmet, miner_chestplate, miner_leggings, miner_boots, nemix_hammer;
+	public static Item nemix_ingot, nemix_reinforced_ingot, nemix_sword, nemix_shovel, nemix_pickaxe, nemix_axe, nemix_hoe, nemix_helmet, nemix_chestplate, nemix_leggings, nemix_boots, nemix_apple, nemix_stick, nemix_core, nemix_reinforced_core, nemix_reinforced_sword, nemix_reinforced_pickaxe, nemix_reinforced_helmet ,nemix_reinforced_chestplate, nemix_reinforced_leggings, nemix_reinforced_boots,nemix_reinforced_axe, nemix_reinforced_hoe, nemix_reinforced_shovel ,miner_helmet, miner_chestplate, miner_leggings, miner_boots, nemix_reinforced_hammer, nemix_hammer, diamond_hammer, golden_hammer, iron_hammer, stone_hammer, wooden_hammer;
 	public static void init()
 	{ 
 		nemix_ingot = new Item().setUnlocalizedName("nemix_ingot").setCreativeTab(NemixMod.nemixtab).setTextureName(Reference.MOD_ID + ":nemix_ingot");
@@ -77,8 +83,13 @@ public class ItemMod
 		miner_chestplate = new ItemMinerArmor(ItemMod.MinerArm, 1).setCreativeTab(NemixMod.nemixtab).setTextureName(Reference.MOD_ID + ":miner_chestplate").setUnlocalizedName("miner_chestplate");
 		miner_leggings = new ItemMinerArmor(ItemMod.MinerArm, 2).setCreativeTab(NemixMod.nemixtab).setTextureName(Reference.MOD_ID + ":miner_leggings").setUnlocalizedName("miner_leggings");
 		miner_boots = new ItemMinerArmor(ItemMod.MinerArm, 3).setCreativeTab(NemixMod.nemixtab).setTextureName(Reference.MOD_ID + ":miner_boots").setUnlocalizedName("miner_boots");
+		nemix_reinforced_hammer = new ItemNemixReinforcedHammer(ItemMod.NemixReinforcedMatt).setCreativeTab(NemixMod.nemixtab).setTextureName(Reference.MOD_ID + ":nemix_reinforced_hammer").setUnlocalizedName("nemix_reinforced_hammer");
 		nemix_hammer = new ItemNemixHammer(ItemMod.NemixMatt).setCreativeTab(NemixMod.nemixtab).setTextureName(Reference.MOD_ID + ":nemix_hammer").setUnlocalizedName("nemix_hammer");
-		
+		diamond_hammer = new ItemDiamondHammer(ToolMaterial.EMERALD).setCreativeTab(NemixMod.nemixtab).setTextureName(Reference.MOD_ID + ":diamond_hammer").setUnlocalizedName("diamond_hammer");
+		golden_hammer  = new ItemGoldenHammer(ToolMaterial.GOLD).setCreativeTab(NemixMod.nemixtab).setTextureName(Reference.MOD_ID + ":golden_hammer").setUnlocalizedName("golden_hammer");
+		iron_hammer  = new ItemIronHammer(ToolMaterial.IRON).setCreativeTab(NemixMod.nemixtab).setTextureName(Reference.MOD_ID + ":iron_hammer").setUnlocalizedName("iron_hammer");
+		stone_hammer  = new ItemStoneHammer(ToolMaterial.STONE).setCreativeTab(NemixMod.nemixtab).setTextureName(Reference.MOD_ID + ":stone_hammer").setUnlocalizedName("stone_hammer");
+		wooden_hammer  = new ItemWoodenhammer(ToolMaterial.WOOD).setCreativeTab(NemixMod.nemixtab).setTextureName(Reference.MOD_ID + ":wooden_hammer").setUnlocalizedName("wooden_hammer");
 	}
 	
 	public static void register()
@@ -88,7 +99,7 @@ public class ItemMod
 		GameRegistry.registerItem(ItemMod.nemix_sword, "nemix_sword");
 		GameRegistry.registerItem(ItemMod.nemix_pickaxe, "nemix_pickaxe");
 		GameRegistry.registerItem(ItemMod.nemix_axe, "nemix_axe");
-		GameRegistry.registerItem(ItemMod.nemix_shovel, "nemix_shovel");
+		GameRegistry.registerItem(ItemMod.nemix_shovel, "nemix_shovel"); 
 		GameRegistry.registerItem(ItemMod.nemix_hoe, "nemix_hoe");
 		GameRegistry.registerItem(ItemMod.nemix_helmet, "nemix_helmet");
 		GameRegistry.registerItem(ItemMod.nemix_chestplate, "nemix_chestplate");
@@ -111,6 +122,12 @@ public class ItemMod
 		GameRegistry.registerItem(ItemMod.miner_chestplate, "miner_chestplate");
 		GameRegistry.registerItem(ItemMod.miner_leggings, "miner_leggings");
 		GameRegistry.registerItem(ItemMod.miner_boots, "miner_boots");
+		GameRegistry.registerItem(ItemMod.nemix_reinforced_hammer, "nemix_reinforced_hammer");
 		GameRegistry.registerItem(ItemMod.nemix_hammer, "nemix_hammer");
+		GameRegistry.registerItem(ItemMod.diamond_hammer, "diamond_hammer");
+		GameRegistry.registerItem(ItemMod.golden_hammer, "golden_hammer");
+		GameRegistry.registerItem(ItemMod.iron_hammer, "iron_hammer");
+		GameRegistry.registerItem(ItemMod.stone_hammer, "stone_hammer");
+		GameRegistry.registerItem(ItemMod.wooden_hammer, "wooden_hammer");
 	}
 }
