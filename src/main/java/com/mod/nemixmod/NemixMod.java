@@ -1,6 +1,7 @@
 package com.mod.nemixmod;
 
 import com.mod.nemixmod.init.BlockMod;
+import com.mod.nemixmod.init.EntityMod;
 import com.mod.nemixmod.init.ItemMod;
 import com.mod.nemixmod.init.RemoveMod;
 import com.mod.nemixmod.proxy.CommonProxy;
@@ -8,6 +9,7 @@ import com.mod.nemixmod.world.WorldRegister;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -21,6 +23,10 @@ import net.minecraft.item.Item;
 
 public class NemixMod
 {
+	@Instance(Reference.MOD_ID)
+	public static NemixMod instance;
+	
+	
 	@SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.SERVER_PROXY)
 	public static CommonProxy proxy;
 	
@@ -49,6 +55,7 @@ public class NemixMod
 	public void Init(FMLInitializationEvent event)
 	{
 		proxy.registerRenders();
+		EntityMod.init();
 	}
 	
 	

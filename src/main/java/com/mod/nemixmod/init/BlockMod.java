@@ -2,6 +2,7 @@ package com.mod.nemixmod.init;
 
 import com.mod.nemixmod.NemixMod;
 import com.mod.nemixmod.Reference;
+import com.mod.nemixmod.blocks.BlockBarriere;
 import com.mod.nemixmod.blocks.BlockBasic;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -20,7 +21,7 @@ public class BlockMod
 	{
 		nemix_block = new BlockBasic(Material.rock).setBlockName("nemix_block").setHardness(10).setResistance(50).setCreativeTab(NemixMod.nemixtab).setBlockTextureName(Reference.MOD_ID + ":nemix_block");
 		nemix_ore = new BlockBasic(Material.rock).setBlockName("nemix_ore").setHardness(5).setResistance(30).setCreativeTab(NemixMod.nemixtab).setBlockTextureName(Reference.MOD_ID + ":nemix_ore");
-		nemix_barriere = new BlockBasic(Material.glass).setBlockName("nemix_barriere").setHardness(-1).setResistance(9999).setCreativeTab(CreativeTabs.tabMisc).setBlockTextureName(Reference.MOD_ID + ":nemix_barriere");
+		nemix_barriere = new BlockBarriere(Material.glass).setBlockName("nemix_barriere").setHardness(-1).setCreativeTab(CreativeTabs.tabMisc).setBlockTextureName(Reference.MOD_ID + ":nemix_barriere");
 		nemix_reinforced_block = new BlockBasic(Material.rock).setBlockName("nemix_reinforced_block").setHardness(10).setResistance(50).setCreativeTab(NemixMod.nemixtab).setBlockTextureName(Reference.MOD_ID + ":nemix_reinforced_block");
 
 	} 
