@@ -72,7 +72,7 @@ public class BlockMod
 		GameRegistry.addRecipe(new ItemStack(ItemMod.golden_hammer, 1), new Object[] {"MMM", "MMM", " S ", 'S', Items.stick, 'M', Items.gold_ingot});
 		GameRegistry.addRecipe(new ItemStack(ItemMod.iron_hammer, 1), new Object[] {"MMM", "MMM", " S ", 'S', Items.stick, 'M', Items.iron_ingot});
 		GameRegistry.addRecipe(new ItemStack(ItemMod.stone_hammer, 1), new Object[] {"MMM", "MMM", " S ", 'S', Items.stick, 'M', Blocks.cobblestone});
-		GameRegistry.addRecipe(new ItemStack(ItemMod.wooden_hammer, 1), new Object[] {"MMM", "MMM", " M ", 'S', Items.stick, 'M', Blocks.planks});
+		GameRegistry.addRecipe(new ItemStack(ItemMod.wooden_hammer, 1), new Object[] {"MMM", "MSM", " S ", 'S', Items.stick, 'M', Blocks.planks});
 
 		
 		
