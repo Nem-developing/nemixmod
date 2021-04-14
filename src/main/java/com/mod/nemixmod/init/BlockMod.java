@@ -59,7 +59,7 @@ public class BlockMod
 		GameRegistry.addRecipe(new ItemStack(ItemMod.nemix_reinforced_shovel, 1), new Object[] {"ISI", "SCS", "ISI", 'I', ItemMod.nemix_reinforced_ingot, 'S', ItemMod.nemix_shovel, 'C', ItemMod.nemix_reinforced_core});
 		GameRegistry.addRecipe(new ItemStack(ItemMod.nemix_apple, 1), new Object[] {"III", "ISI", "III", 'I', ItemMod.nemix_ingot, 'S', Items.apple});
 		
-		// Armure Nemix renfocrée
+		// Armure Nemix renfocrÃ©e
 		GameRegistry.addRecipe(new ItemStack(ItemMod.nemix_reinforced_helmet, 1), new Object[] {"LCL", "CRC", "LCL", 'L', ItemMod.nemix_reinforced_ingot, 'C', ItemMod.nemix_helmet, 'R', ItemMod.nemix_reinforced_core});
 		GameRegistry.addRecipe(new ItemStack(ItemMod.nemix_reinforced_chestplate, 1), new Object[] {"LCL", "CRC", "LCL", 'L', ItemMod.nemix_reinforced_ingot, 'C', ItemMod.nemix_chestplate, 'R', ItemMod.nemix_reinforced_core});
 		GameRegistry.addRecipe(new ItemStack(ItemMod.nemix_reinforced_leggings, 1), new Object[] {"LCL", "CRC", "LCL", 'L', ItemMod.nemix_reinforced_ingot, 'C', ItemMod.nemix_leggings, 'R', ItemMod.nemix_reinforced_core});
@@ -72,7 +72,7 @@ public class BlockMod
 		GameRegistry.addRecipe(new ItemStack(ItemMod.golden_hammer, 1), new Object[] {"MMM", "MMM", " S ", 'S', Items.stick, 'M', Items.gold_ingot});
 		GameRegistry.addRecipe(new ItemStack(ItemMod.iron_hammer, 1), new Object[] {"MMM", "MMM", " S ", 'S', Items.stick, 'M', Items.iron_ingot});
 		GameRegistry.addRecipe(new ItemStack(ItemMod.stone_hammer, 1), new Object[] {"MMM", "MMM", " S ", 'S', Items.stick, 'M', Blocks.cobblestone});
-		GameRegistry.addRecipe(new ItemStack(ItemMod.wooden_hammer, 1), new Object[] {"MMM", "MMM", " S ", 'S', Items.stick, 'M', Blocks.planks});
+		GameRegistry.addRecipe(new ItemStack(ItemMod.wooden_hammer, 1), new Object[] {"MMM", "MMM", " M ", 'S', Items.stick, 'M', Blocks.planks});
 
 		
 		
