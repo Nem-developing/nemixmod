@@ -43,12 +43,12 @@ public class ItemMod
 	
 	
 	public static ToolMaterial NemixMatt = EnumHelper.addToolMaterial("Nemix", 8, 3333, 15, 5, 30);
-	public static ToolMaterial NemixReinforcedMatt = EnumHelper.addToolMaterial("NemixReinforced", 10, 7777, 30, 15, 1);
+	public static ToolMaterial NemixReinforcedMatt = EnumHelper.addToolMaterial("NemixReinforced", 10, 9999, 30, 15, 1);
 	
 	
-	public static ArmorMaterial MinerArm = EnumHelper.addArmorMaterial("Miner", 100, new int[] {2, 5, 5, 2}, 5);
-	public static ArmorMaterial NemixArm = EnumHelper.addArmorMaterial("Nemix", 250, new int[] {5, 10, 10, 5}, 7);
-	public static ArmorMaterial NemixReinforcedArm = EnumHelper.addArmorMaterial("NemixReinforced", 1000, new int[] {10, 20, 20, 10}, 7);
+	public static ArmorMaterial MinerArm = EnumHelper.addArmorMaterial("Miner", 15, new int[] {2, 5, 5, 2}, 5);
+	public static ArmorMaterial NemixArm = EnumHelper.addArmorMaterial("Nemix", 40, new int[] {4, 9, 7, 3}, 9);
+	public static ArmorMaterial NemixReinforcedArm = EnumHelper.addArmorMaterial("NemixReinforced", 50, new int[] {5, 10, 8, 4}, 5);
 	
 	
 	
